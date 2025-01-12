@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Novel Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Toko Novel Online</h1>
+            <div class="center-menu">
+                <ul>
+                    <li><strong><a href="index.html">Home</a></strong></li>
+                    <li><strong><a href="#" onclick="toggleGenre()">Genre</a></strong>
+                        <ul id="genre-options" class="submenu" style="display: none;">
+                            <li><a href="romantis.html">Novel Romantis</a></li>
+                            <li><a href="horor.html">Novel Horor</a></li>
+                            <li><a href="komedi.html">Novel Komedi</a></li>
+                        </ul>
+                    </li>
+                    <li><strong><a href="#" onclick="toggleRecommendation()">Rekomendasi</a></strong>
+                        <ul id="recommendation-options" class="submenu" style="display: none;">
+                            <li><a href="best sellerr.html">Best Seller</a></li>
+                            <li><a href="terbaru.html">Terbaru</a></li>
+                            <li><a href="populer.html">Populer</a></li>
+                        </ul>
+                    </li>
+                    <li><strong><a href="#" onclick="toggleYear()">Tahun</a></strong>
+                        <ul id="year-options" class="submenu" style="display: none;">
+                            <li><a href="#" onclick="filterYear(2024)">2024</a></li>
+                            <li><a href="#" onclick="filterYear(2023)">2023</a></li>
+                            <li><a href="#" onclick="filterYear(2022)">2022</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Cari novel..." onkeyup="searchNovel()">
+            <button onclick="searchNovel()">Cari</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="category-display">
+            <h2 id="display-title">Pilih kategori novel untuk melihat pilihan yang tersedia.</h2>
+        </section>
+    
+        <section id="product-list" class="product-list">
+            <h2>Novel Terbaru dan Populer</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="horor 1.jpg" alt="Novel Horor 1">
+                    <h3>Novel Horor 1</h3>
+                    <p>Rp110,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 1.jpg" alt="Novel Komedi 1">
+                    <h3>Novel Komedi 1</h3>
+                    <p>Rp120,000</p>
+                </div>
+                <div class="product">
+                    <img src="horor 2.jpg" alt="Novel Horor 2">
+                    <h3>Novel Horor 2</h3>
+                    <p>Rp130,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 2.jpg" alt="Novel Komedi 2">
+                    <h3>Novel Komedi 2</h3>
+                    <p>Rp140,000</p>
+                </div>
+                <div class="product">
+                    <img src="horor 3.jpg" alt="Novel Horor 3">
+                    <h3>Novel Horor 3</h3>
+                    <p>Rp150,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 3.jpg" alt="Novel Komedi 3">
+                    <h3>Novel Komedi 3</h3>
+                    <p>Rp160,000</p>
+                </div>
+                <div class="product">
+                    <img src="horor 4.jpg" alt="Novel Horor 4">
+                    <h3>Novel Horor 4</h3>
+                    <p>Rp170,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 4.jpg" alt="Novel Komedi 4">
+                    <h3>Novel Komedi 4</h3>
+                    <p>Rp180,000</p>
+                </div>
+                <div class="product">
+                    <img src="horor 5.jpg" alt="Novel Horor 5">
+                    <h3>Novel Horor 5</h3>
+                    <p>Rp190,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 5.jpg" alt="Novel Komedi 5">
+                    <h3>Novel Komedi 5</h3>
+                    <p>Rp200,000</p>
+                </div>
+                <div class="product">
+                    <img src="horor 6.jpg" alt="Novel Horor 6">
+                    <h3>Novel Horor 6</h3>
+                    <p>Rp210,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 6.jpg" alt="Novel Komedi 6">
+                    <h3>Novel Komedi 6</h3>
+                    <p>Rp220,000</p>
+                </div>
+                <div class="product">
+                    <img src="horor 7.jpg" alt="Novel Horor 7">
+                    <h3>Novel Horor 7</h3>
+                    <p>Rp230,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 7.jpg" alt="Novel Komedi 7">
+                    <h3>Novel Komedi 7</h3>
+                    <p>Rp240,000</p>
+                </div>
+                <div class="product">
+                    <img src="horor 8.jpg" alt="Novel Horor 8">
+                    <h3>Novel Horor 8</h3>
+                    <p>Rp250,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 8.jpg" alt="Novel Komedi 8">
+                    <h3>Novel Komedi 8</h3>
+                    <p>Rp260,000</p>
+                </div>
+                <div class="product">
+                    <img src="horor 9.jpg" alt="Novel Horor 9">
+                    <h3>Novel Horor 9</h3>
+                    <p>Rp270,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 9.jpg" alt="Novel Komedi 9">
+                    <h3>Novel Komedi 9</h3>
+                    <p>Rp280,000</p>
+                </div>
+                <div class="product">
+                    <img src="horor 10.jpg" alt="Novel Horor 10">
+                    <h3>Novel Horor 10</h3>
+                    <p>Rp290,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 10.jpg" alt="Novel Komedi 10">
+                    <h3>Novel Komedi 10</h3>
+                    <p>Rp300,000</p>
+                </div>
+                <div class="product">
+                    <img src="horor 11.jpg" alt="Novel Horor 11">
+                    <h3>Novel Horor 11</h3>
+                    <p>Rp310,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 11.jpg" alt="Novel Komedi 11">
+                    <h3>Novel Komedi 11</h3>
+                    <p>Rp320,000</p>
+                </div>
+                <div class="product">
+                    <img src="horor 12.jpg" alt="Novel Horor 12">
+                    <h3>Novel Horor 12</h3>
+                    <p>Rp330,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 12.jpg" alt="Novel Komedi 12">
+                    <h3>Novel Komedi 12</h3>
+                    <p>Rp340,000</p>
+                </div>
+                <div class="product">
+                    <img src="horor 13.jpg" alt="Novel Horor 13">
+                    <h3>Novel Horor 13</h3>
+                    <p>Rp350,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 13.jpg" alt="Novel Komedi 13">
+                    <h3>Novel Komedi 13</h3>
+                    <p>Rp360,000</p>
+                </div>
+                <div class="product">
+                    <img src="horor 14.jpg" alt="Novel Horor 14">
+                    <h3>Novel Horor 14</h3>
+                    <p>Rp370,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 14.jpg" alt="Novel Komedi 14">
+                    <h3>Novel Komedi 14</h3>
+                    <p>Rp380,000</p>
+                </div>
+                <div class="product">
+                    <img src="horor 15.jpg" alt="Novel Horor 15">
+                    <h3>Novel Horor 15</h3>
+                    <p>Rp390,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 15.jpg" alt="Novel Komedi 15">
+                    <h3>Novel Komedi 15</h3>
+                    <p>Rp400,000</p>
+                </div>
+                <div class="product">
+                    <img src="horor 16.jpg" alt="Novel Horor 16">
+                    <h3>Novel Horor 16</h3>
+                    <p>Rp410,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 16.jpg" alt="Novel Komedi 16">
+                    <h3>Novel Komedi 16</h3>
+                    <p>Rp420,000</p>
+                </div>
+                <div class="product">
+                    <img src="horor 17.jpg" alt="Novel Horor 17">
+                    <h3>Novel Horor 17</h3>
+                    <p>Rp430,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 17.jpg" alt="Novel Komedi 17">
+                    <h3>Novel Komedi 17</h3>
+                    <p>Rp440,000</p>
+                </div>
+                <div class="product">
+                    <img src="horor 18.jpg" alt="Novel Horor 18">
+                    <h3>Novel Horor 18</h3>
+                    <p>Rp450,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 18.jpg" alt="Novel Komedi 18">
+                    <h3>Novel Komedi 18</h3>
+                    <p>Rp460,000</p>
+                </div>
+                <div class="product">
+                    <img src="horor 19.jpg" alt="Novel Horor 19">
+                    <h3>Novel Horor 19</h3>
+                    <p>Rp470,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 19.jpg" alt="Novel Komedi 19">
+                    <h3>Novel Komedi 19</h3>
+                    <p>Rp480,000</p>
+                </div>
+                <div class="product">
+                    <img src="horor 20.jpg" alt="Novel Horor 20">
+                    <h3>Novel Horor 20</h3>
+                    <p>Rp490,000</p>
+                </div>
+                <div class="product">
+                    <img src="komedi 20.jpg" alt="Novel Komedi 20">
+                    <h3>Novel Komedi 20</h3>
+                    <p>Rp500,000</p>
+                </div>
+                            <div class="product">
+                                <img src="horor 1.jpg" alt="Novel Horor 1">
+                                <h3>Novel Horor 1</h3>
+                                <p>Rp110,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 1.jpg" alt="Novel Komedi 1">
+                                <h3>Novel Komedi 1</h3>
+                                <p>Rp120,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="horor 2.jpg" alt="Novel Horor 2">
+                                <h3>Novel Horor 2</h3>
+                                <p>Rp130,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 2.jpg" alt="Novel Komedi 2">
+                                <h3>Novel Komedi 2</h3>
+                                <p>Rp140,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="horor 3.jpg" alt="Novel Horor 3">
+                                <h3>Novel Horor 3</h3>
+                                <p>Rp150,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 3.jpg" alt="Novel Komedi 3">
+                                <h3>Novel Komedi 3</h3>
+                                <p>Rp160,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="horor 4.jpg" alt="Novel Horor 4">
+                                <h3>Novel Horor 4</h3>
+                                <p>Rp170,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 4.jpg" alt="Novel Komedi 4">
+                                <h3>Novel Komedi 4</h3>
+                                <p>Rp180,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="horor 5.jpg" alt="Novel Horor 5">
+                                <h3>Novel Horor 5</h3>
+                                <p>Rp190,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 5.jpg" alt="Novel Komedi 5">
+                                <h3>Novel Komedi 5</h3>
+                                <p>Rp200,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="horor 6.jpg" alt="Novel Horor 6">
+                                <h3>Novel Horor 6</h3>
+                                <p>Rp210,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 6.jpg" alt="Novel Komedi 6">
+                                <h3>Novel Komedi 6</h3>
+                                <p>Rp220,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="horor 7.jpg" alt="Novel Horor 7">
+                                <h3>Novel Horor 7</h3>
+                                <p>Rp230,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 7.jpg" alt="Novel Komedi 7">
+                                <h3>Novel Komedi 7</h3>
+                                <p>Rp240,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="horor 8.jpg" alt="Novel Horor 8">
+                                <h3>Novel Horor 8</h3>
+                                <p>Rp250,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 8.jpg" alt="Novel Komedi 8">
+                                <h3>Novel Komedi 8</h3>
+                                <p>Rp260,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="horor 9.jpg" alt="Novel Horor 9">
+                                <h3>Novel Horor 9</h3>
+                                <p>Rp270,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 9.jpg" alt="Novel Komedi 9">
+                                <h3>Novel Komedi 9</h3>
+                                <p>Rp280,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="horor 10.jpg" alt="Novel Horor 10">
+                                <h3>Novel Horor 10</h3>
+                                <p>Rp290,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 10.jpg" alt="Novel Komedi 10">
+                                <h3>Novel Komedi 10</h3>
+                                <p>Rp300,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="horor 11.jpg" alt="Novel Horor 11">
+                                <h3>Novel Horor 11</h3>
+                                <p>Rp310,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 11.jpg" alt="Novel Komedi 11">
+                                <h3>Novel Komedi 11</h3>
+                                <p>Rp320,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="horor 12.jpg" alt="Novel Horor 12">
+                                <h3>Novel Horor 12</h3>
+                                <p>Rp330,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 12.jpg" alt="Novel Komedi 12">
+                                <h3>Novel Komedi 12</h3>
+                                <p>Rp340,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="horor 13.jpg" alt="Novel Horor 13">
+                                <h3>Novel Horor 13</h3>
+                                <p>Rp350,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 13.jpg" alt="Novel Komedi 13">
+                                <h3>Novel Komedi 13</h3>
+                                <p>Rp360,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="horor 14.jpg" alt="Novel Horor 14">
+                                <h3>Novel Horor 14</h3>
+                                <p>Rp370,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 14.jpg" alt="Novel Komedi 14">
+                                <h3>Novel Komedi 14</h3>
+                                <p>Rp380,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="horor 15.jpg" alt="Novel Horor 15">
+                                <h3>Novel Horor 15</h3>
+                                <p>Rp390,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 15.jpg" alt="Novel Komedi 15">
+                                <h3>Novel Komedi 15</h3>
+                                <p>Rp400,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="horor 16.jpg" alt="Novel Horor 16">
+                                <h3>Novel Horor 16</h3>
+                                <p>Rp410,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 16.jpg" alt="Novel Komedi 16">
+                                <h3>Novel Komedi 16</h3>
+                                <p>Rp420,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="horor 17.jpg" alt="Novel Horor 17">
+                                <h3>Novel Horor 17</h3>
+                                <p>Rp430,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 17.jpg" alt="Novel Komedi 17">
+                                <h3>Novel Komedi 17</h3>
+                                <p>Rp440,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="horor 18.jpg" alt="Novel Horor 18">
+                                <h3>Novel Horor 18</h3>
+                                <p>Rp450,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 18.jpg" alt="Novel Komedi 18">
+                                <h3>Novel Komedi 18</h3>
+                                <p>Rp460,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="horor 19.jpg" alt="Novel Horor 19">
+                                <h3>Novel Horor 19</h3>
+                                <p>Rp470,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 19.jpg" alt="Novel Komedi 19">
+                                <h3>Novel Komedi 19</h3>
+                                <p>Rp480,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="horor 20.jpg" alt="Novel Horor 20">
+                                <h3>Novel Horor 20</h3>
+                                <p>Rp490,000</p>
+                            </div>
+                            <div class="product">
+                                <img src="komedi 20.jpg" alt="Novel Komedi 20">
+                                <h3>Novel Komedi 20</h3>
+                                <p>Rp500,000</p>
+                            </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2025 Toko Novel Online</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
